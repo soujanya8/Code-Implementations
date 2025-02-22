@@ -34,5 +34,7 @@ public class Madlibsgame{
         System.out.print("Finally, we arrived and it was very "+adjective1+".");
         System.out.print("There were "+adjective2+" people "+verb1+" everywhere.");
         System.out.println("There were also people dressed up in "+noun3+" costumes.");
+        scanner.close();
     }
+
 }
