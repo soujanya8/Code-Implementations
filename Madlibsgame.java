@@ -27,7 +27,7 @@ public class Madlibsgame{
         System.out.print("Enter a Noun(person or animal): ");
         noun3 = scanner.nextLine();
 
-        System.out.print("\n\n\<------Trip to Disney world------->\n");
+        System.out.print( " \n\n------Trip to Disney world------- \n");
         
         System.out.print("\n Last month, I went to Disney World with "+noun1+".");
         System.out.print("We traveled for "+number+"hours by "+noun2+ ".");
