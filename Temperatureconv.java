@@ -15,7 +15,7 @@ public class Temperatureconv {
 
         newTemp = (unit.contains("C")) ? 5*(temp-32)/9 : (temp*9/5)+32;
         
-        System.out.printf("\n\nConverted temperature: %.2f %s\n",newTemp,unit);
+        System.out.printf("\n\n          Converted temperature: %.2f °%s\n\n",newTemp,unit);
         scanner.close();
 
     }
