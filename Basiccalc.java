@@ -6,7 +6,7 @@ public class Basiccalc {
         System.out.println("\n\n<------ Basic Caluclator -------->\n");
         System.out.print("Enter a number: ");
         double num1 = scanner.nextDouble();
-        System.out.print("Enter a operator (+,-,*,/,^): ");
+        System.out.print("Enter a operator (+,-,*,/,^,%): ");
         char operator = scanner.next().charAt(0);
         scanner.nextLine();
         System.out.print("Enter a number: ");
@@ -28,7 +28,18 @@ public class Basiccalc {
                 }
                 }
             case '^' -> result = Math.pow(num1 , num2);
-            default -> System.out.println("Invalid Operator");
+            case '%' -> {
+                if(num2 == 0){
+                    System.out.println("Can't divide with zero\n\n");
+                    isValidOperation = false;
+                } else{
+                    result = num1 % num2;
+                }
+                }
+            default -> {
+                System.out.println("\n   Invalid Operator\n");
+                isValidOperation = false;
+            }
 
         }
         if(isValidOperation){
@@ -37,5 +48,5 @@ public class Basiccalc {
         
     scanner.close();
     }
-    
+     
 }
