@@ -42,7 +42,7 @@ public class Banking{
             }
         }
 
-        //doWithdrawl()
+        scanner.close();
     }
     static double getBalance(double balance){
         return +balance;
